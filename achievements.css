@@ -21,7 +21,13 @@
 .navigation-links-navlink1 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink1:hover {
   font-style: normal;
@@ -30,7 +36,13 @@
 .navigation-links-navlink2 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink2:hover {
   font-style: normal;
@@ -39,7 +51,13 @@
 .navigation-links-navlink3 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 600ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink3:hover {
   font-style: normal;
@@ -48,7 +66,13 @@
 .navigation-links-navlink4 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 600ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink4:hover {
   font-style: normal;
@@ -147,7 +171,7 @@
   height: var(--dl-size-size-small);
   animation-name: fadeIn;
   animation-delay: 0s;
-  animation-duration: 300ms;
+  animation-duration: 1000ms;
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease;

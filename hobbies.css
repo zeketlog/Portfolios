@@ -21,7 +21,13 @@
 .navigation-links-navlink1 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink1:hover {
   font-style: normal;
@@ -30,7 +36,13 @@
 .navigation-links-navlink2 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink2:hover {
   font-style: normal;
@@ -39,7 +51,13 @@
 .navigation-links-navlink3 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 600ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink3:hover {
   font-style: normal;
@@ -48,7 +66,13 @@
 .navigation-links-navlink4 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 600ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink4:hover {
   font-style: normal;
@@ -124,7 +148,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
 }
-.hobbies-container1 {
+.hobbies-container01 {
   flex: 0 0 auto;
   width: 81px;
   height: 68px;
@@ -147,12 +171,12 @@
   height: var(--dl-size-size-small);
   animation-name: fadeIn;
   animation-delay: 0s;
-  animation-duration: 300ms;
+  animation-duration: 1000ms;
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-.hobbies-container2 {
+.hobbies-container02 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -205,9 +229,294 @@
   align-items: center;
   flex-direction: column;
 }
+.hobbies-gallery {
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-gap: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a b b" "a b b" "a c d" "a c d"  "e e d" "e e f" "e e f";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.hobbies-container03 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 1;
+  grid-area: a;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1522814208878-08129b4b76f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGxpZ2h0aG91c2UlMjBwYXN0ZWx8ZW58MHx8fHwxNjI2NDM5Nzkx&ixlib=rb-1.2.1&w=1000");
+  background-position: center;
+}
+.hobbies-container03:hover {
+  transform: scale(0.98);
+}
+.hobbies-container04 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/mv5bnzaymzewn2ytodvkzi00nzblltkwndatzjhhzjyxzjq1owjkxkeyxkfqcgdeqxvymtaynjg4nje0._v1_fmjpg_ux1000_-1400w.jpg");
+}
+.hobbies-text01 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(217, 217, 217, 0.54);
+}
+.hobbies-text02 {
+  color: var(--dl-color-gray-white);
+  margin-top: var(--dl-space-space-halfunit);
+  background-color: rgba(196, 194, 194, 0.53);
+}
+.hobbies-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: b;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDJ8fGdyZWVuJTIwbGFtcCUyMHBhc3RlbHxlbnwwfHx8fDE2MjY0Mzk4NDA&ixlib=rb-1.2.1&h=1000");
+  background-position: center;
+}
+.hobbies-container05:hover {
+  transform: scale(0.98);
+}
+.hobbies-container06 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/inzgu5fgyjdc1-1400w.webp");
+  background-position: center;
+}
+.hobbies-text09 {
+  color: var(--dl-color-gray-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(217, 217, 217, 0.59);
+}
+.hobbies-text12 {
+  color: var(--dl-color-gray-white);
+  margin-top: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0.54);
+}
+.hobbies-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: c;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1528696892704-5e1122852276?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBpbmslMjB0ZWElMjBwYXN0ZWx8ZW58MHx8fHwxNjI2NDM5ODU2&ixlib=rb-1.2.1&w=1000");
+  background-position: center;
+}
+.hobbies-container07:hover {
+  transform: scale(0.98);
+}
+.hobbies-container08 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/sud0uoqongdc1-1400w.webp");
+  background-position: center;
+}
+.hobbies-text19 {
+  color: var(--dl-color-gray-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(217, 217, 217, 0.65);
+}
+.hobbies-text20 {
+  color: var(--dl-color-gray-white);
+  margin-top: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0.48);
+}
+.hobbies-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: d;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDV8fHllbGxvdyUyMGljZWNyZWFtfGVufDB8fHx8MTYyNjQzOTg4OQ&ixlib=rb-1.2.1&h=1000");
+  background-position: center;
+}
+.hobbies-container09:hover {
+  transform: scale(0.98);
+}
+.hobbies-container10 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/tagpuan-from-fb-1-1024x576-1200h.jpeg");
+  background-position: right;
+}
+.hobbies-text25 {
+  color: var(--dl-color-gray-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(193, 191, 191, 0.75);
+}
+.hobbies-text26 {
+  color: var(--dl-color-gray-white);
+  margin-top: var(--dl-space-space-halfunit);
+  background-color: rgba(187, 185, 185, 0.73);
+}
+.hobbies-container11 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: e;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1551500226-b50b653e33e8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxwYXN0ZWwlMjBjb2ZmZWUlMjBncmVlbnxlbnwwfHx8fDE2MjY0Mzk5MzA&ixlib=rb-1.2.1&w=1000");
+  background-position: center;
+}
+.hobbies-container11:hover {
+  transform: scale(0.98);
+}
+.hobbies-container12 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/is-eleceed-manga-the-next-solo-levelling-2-1200h.webp");
+  background-position: center;
+}
+.hobbies-text27 {
+  color: #fdfcfc;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  font-weight: 600;
+  background-color: rgba(173, 171, 171, 0.57);
+}
+.hobbies-text28 {
+  color: rgb(255, 255, 255);
+  align-self: flex-end;
+  margin-top: var(--dl-space-space-halfunit);
+  background-color: rgba(168, 168, 168, 0.76);
+}
+.hobbies-container13 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-area: f;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1591101761702-0c4927df1d52?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fHBhc3RlbCUyMHBpbmslMjBjb3R0b258ZW58MHx8fHwxNjI2NDQwMDUw&ixlib=rb-1.2.1&w=1000");
+  background-position: center;
+}
+.hobbies-container13:hover {
+  transform: scale(0.98);
+}
+.hobbies-container14 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/received_690232043030526-1200h.jpg");
+}
+.hobbies-text33 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  font-weight: 600;
+  background-color: rgba(217, 217, 217, 0.64);
+}
+.hobbies-text34 {
+  color: rgb(255, 255, 255);
+  align-self: flex-end;
+  margin-top: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0.63);
+}
 @media(max-width: 991px) {
   .hobbies-nav1 {
     padding-top: 16px;
+  }
+  .hobbies-gallery {
+    grid-gap: var(--dl-space-space-unit);
+  }
+  .hobbies-text01 {
+    text-align: center;
+  }
+  .hobbies-text02 {
+    text-align: center;
+  }
+  .hobbies-text09 {
+    text-align: center;
+  }
+  .hobbies-text12 {
+    text-align: center;
+  }
+  .hobbies-text19 {
+    text-align: center;
+  }
+  .hobbies-text20 {
+    text-align: center;
+  }
+  .hobbies-text25 {
+    text-align: center;
+  }
+  .hobbies-text26 {
+    text-align: center;
+  }
+  .hobbies-text27 {
+    text-align: center;
+  }
+  .hobbies-text28 {
+    text-align: center;
+  }
+  .hobbies-text33 {
+    text-align: center;
+  }
+  .hobbies-text34 {
+    text-align: center;
   }
 }
 @media(max-width: 767px) {
@@ -225,6 +534,12 @@
   .hobbies-icon2 {
     display: flex;
   }
+  .hobbies-gallery {
+    height: auto;
+    display: flex;
+    padding: var(--dl-space-space-twounits);
+    flex-direction: column;
+  }
 }
 @media(max-width: 479px) {
   .hobbies-header {
@@ -233,5 +548,9 @@
   .hobbies-separator {
     margin-top: var(--dl-space-space-unit);
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .hobbies-gallery {
+    width: 100%;
+    padding: var(--dl-space-space-unit);
   }
 }

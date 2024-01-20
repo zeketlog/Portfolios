@@ -21,7 +21,13 @@
 .navigation-links-navlink1 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink1:hover {
   font-style: normal;
@@ -30,7 +36,13 @@
 .navigation-links-navlink2 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink2:hover {
   font-style: normal;
@@ -39,7 +51,13 @@
 .navigation-links-navlink3 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 600ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink3:hover {
   font-style: normal;
@@ -48,7 +66,13 @@
 .navigation-links-navlink4 {
   transition: 0.3s;
   margin-left: var(--dl-space-space-twounits);
+  animation-name: none;
+  animation-delay: 0s;
   text-decoration: none;
+  animation-duration: 600ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .navigation-links-navlink4:hover {
   font-style: normal;
@@ -151,7 +175,7 @@
   height: var(--dl-size-size-small);
   animation-name: fadeIn;
   animation-delay: 0s;
-  animation-duration: 300ms;
+  animation-duration: 1s;
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease;
@@ -226,13 +250,19 @@
   background-color: #87928e;
 }
 .home-text01 {
-  color: rgb(0, 0, 0);
-  font-size: 3rem;
-  text-align: center;
+  font-size: 50px;
+  font-style: normal;
   font-family: "Exo 2";
-  text-transform: uppercase;
+  font-weight: 500;
+  animation-name: pulse;
+  letter-spacing: 10px;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
-.home-text02 {
+.home-text04 {
   max-width: var(--dl-size-size-maxwidth);
   font-style: normal;
   margin-top: var(--dl-space-space-twounits);
@@ -247,79 +277,10 @@
   display: flex;
   position: relative;
   align-items: flex-start;
+  border-color: rgba(120, 120, 120, 0.4);
+  border-style: solid;
+  border-width: 0px;
   justify-content: flex-start;
-}
-.home-banner1 {
-  width: 50%;
-  display: flex;
-  padding: var(--dl-space-space-twounits);
-  position: relative;
-  align-self: flex-start;
-  transition: 0.3s;
-  align-items: center;
-  border-color: #f2efe4;
-  border-width: 25px;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-color: rgba(202, 86, 27, 0.85);
-}
-.home-banner1:hover {
-  border-width: 20px;
-  background-color: rgba(227, 99, 34, 0.84);
-}
-.home-text03 {
-  color: rgb(0, 0, 0);
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Exo 2";
-  text-transform: uppercase;
-}
-.home-text04 {
-  width: auto;
-  height: auto;
-  max-width: var(--dl-size-size-xxlarge);
-  min-width: var(--dl-size-size-xxlarge);
-  align-self: center;
-  font-style: normal;
-  margin-top: var(--dl-space-space-twounits);
-  max-height: var(--dl-size-size-xxlarge);
-  min-height: var(--dl-size-size-small);
-  text-align: left;
-  font-weight: 600;
-  margin-left: var(--dl-space-space-twounits);
-  margin-right: var(--dl-space-space-twounits);
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.home-link {
-  display: contents;
-}
-.home-image {
-  top: 573px;
-  flex: 1;
-  right: 130px;
-  width: 367px;
-  height: 236px;
-  margin: auto;
-  z-index: 100;
-  position: absolute;
-  align-self: center;
-  box-shadow: 5px 5px 10px 0px #d4d4d4;
-  object-fit: cover;
-  border-color: rgba(202, 86, 27, 0.85);
-  border-width: 10px;
-  text-decoration: none;
-}
-.home-separator1 {
-  width: 1300px;
-  height: 2px;
-  margin: var(--dl-space-space-oneandhalfunits);
-  align-self: center;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  padding-left: var(--dl-space-space-fourunits);
-  border-radius: var(--dl-radius-radius-radius4);
-  padding-right: var(--dl-space-space-fourunits);
-  background-color: #0c0a08;
 }
 .home-steps {
   width: 100%;
@@ -327,13 +288,15 @@
   padding: var(--dl-space-space-threeunits);
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
   flex-direction: column;
 }
-.home-text10 {
+.home-text05 {
   color: var(--dl-color-gray-black);
   font-size: 3rem;
 }
-.home-text11 {
+.home-text06 {
   color: var(--dl-color-gray-700);
   font-size: 1.15rem;
   max-width: 600px;
@@ -342,10 +305,10 @@
   margin-bottom: var(--dl-space-space-unit);
   text-transform: capitalize;
 }
-.home-text12 {
+.home-text07 {
   text-transform: capitalize;
 }
-.home-text13 {
+.home-text08 {
   text-transform: lowercase;
 }
 .home-container04 {
@@ -422,13 +385,13 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
 }
-.home-text14 {
+.home-text09 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-text15 {
+.home-text10 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   text-align: center;
@@ -500,13 +463,13 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
 }
-.home-text22 {
+.home-text17 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-text23 {
+.home-text18 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   text-align: center;
@@ -578,13 +541,13 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
 }
-.home-text26 {
+.home-text21 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-text27 {
+.home-text22 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   text-align: center;
@@ -656,13 +619,13 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
 }
-.home-text30 {
+.home-text25 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-text31 {
+.home-text26 {
   color: var(--dl-color-gray-500);
   font-size: 0.75rem;
   text-align: center;
@@ -671,10 +634,10 @@
   .home-nav1 {
     padding-top: 16px;
   }
-  .home-text10 {
+  .home-text05 {
     text-align: center;
   }
-  .home-text11 {
+  .home-text06 {
     text-align: center;
   }
 }
@@ -697,21 +660,9 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .home-text02 {
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-  }
-  .home-banner1 {
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-  }
   .home-text04 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
-  }
-  .home-separator1 {
-    margin-top: var(--dl-space-space-oneandhalfunits);
-    margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
   .home-steps {
     padding-left: var(--dl-space-space-twounits);
@@ -753,13 +704,13 @@
     padding-bottom: var(--dl-space-space-twounits);
     justify-content: space-between;
   }
-  .home-text14 {
+  .home-text09 {
     margin-top: var(--dl-space-space-twounits);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .home-text15 {
+  .home-text10 {
     text-align: left;
   }
   .home-step1 {
@@ -797,13 +748,13 @@
     padding-bottom: var(--dl-space-space-twounits);
     justify-content: space-between;
   }
-  .home-text22 {
+  .home-text17 {
     margin-top: var(--dl-space-space-twounits);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .home-text23 {
+  .home-text18 {
     text-align: left;
   }
   .home-step2 {
@@ -841,13 +792,13 @@
     padding-bottom: var(--dl-space-space-twounits);
     justify-content: space-between;
   }
-  .home-text26 {
+  .home-text21 {
     margin-top: var(--dl-space-space-twounits);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .home-text27 {
+  .home-text22 {
     text-align: left;
   }
   .home-step3 {
@@ -885,13 +836,13 @@
     padding-bottom: var(--dl-space-space-twounits);
     justify-content: space-between;
   }
-  .home-text30 {
+  .home-text25 {
     margin-top: var(--dl-space-space-twounits);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .home-text31 {
+  .home-text26 {
     text-align: left;
   }
 }
@@ -909,16 +860,6 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .home-banner1 {
-    padding-top: var(--dl-space-space-twounits);
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-twounits);
-  }
-  .home-separator1 {
-    margin-top: var(--dl-space-space-unit);
-    margin-bottom: var(--dl-space-space-unit);
-  }
   .home-steps {
     padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
@@ -934,7 +875,7 @@
     padding-right: 0px;
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .home-text14 {
+  .home-text09 {
     margin-left: 0px;
     margin-right: var(--dl-space-space-twounits);
   }
@@ -944,7 +885,7 @@
     padding-right: 0px;
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .home-text22 {
+  .home-text17 {
     margin-left: 0px;
     margin-right: var(--dl-space-space-twounits);
   }
@@ -954,7 +895,7 @@
     padding-right: 0px;
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .home-text26 {
+  .home-text21 {
     margin-left: 0px;
     margin-right: var(--dl-space-space-twounits);
   }
@@ -964,7 +905,7 @@
     padding-right: 0px;
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .home-text30 {
+  .home-text25 {
     margin-left: 0px;
     margin-right: var(--dl-space-space-twounits);
   }
