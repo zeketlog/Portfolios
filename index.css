@@ -102,6 +102,8 @@
   overflow: auto;
   min-height: 100vh;
   align-items: flex-start;
+  border-color: #f2efe4;
+  border-width: 1px;
   animation-name: none;
   flex-direction: column;
   animation-delay: 0s;
@@ -166,6 +168,37 @@
   align-items: center;
   flex-direction: column;
 }
+.home-banner {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  transition: 0.3s;
+  align-items: center;
+  border-color: #f2efe4;
+  border-width: 30px;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #7d8683;
+}
+.home-banner:hover {
+  border-width: 20px;
+  background-color: #87928e;
+}
+.home-text1 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Exo 2";
+  text-transform: uppercase;
+}
+.home-text2 {
+  max-width: var(--dl-size-size-maxwidth);
+  font-style: normal;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: var(--dl-space-space-twounits);
+}
 @media(max-width: 991px) {
   .home-nav1 {
     padding-top: 16px;
@@ -186,6 +219,14 @@
   .home-icon {
     display: flex;
   }
+  .home-banner {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .home-text2 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
 }
 @media(max-width: 479px) {
   .home-header {
@@ -194,5 +235,11 @@
   .home-separator {
     margin-top: var(--dl-space-space-unit);
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-banner {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
   }
 }
