@@ -129,6 +129,12 @@
   font-style: normal;
   font-family: "Exo 2";
   font-weight: 500;
+  animation-name: pulse;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .home-separator {
   width: 100%;
